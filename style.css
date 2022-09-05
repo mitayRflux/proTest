@@ -29,3 +29,9 @@ body{
   min-height: 100px;
   border:2px solid blue;
 }
+
+#section{
+  width: 100%;
+  min-height: 200px;
+  border: 2px solid rgb(197, 74, 74);
+}
