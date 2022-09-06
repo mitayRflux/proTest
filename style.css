@@ -26,8 +26,26 @@ body{
 
 .cont{
   width: 95%;
-  min-height: 100px;
+  padding: 10px;
   border:2px solid blue;
+}
+
+.logo{
+  width: 70px;
+  height: 70px;
+  background-color: blue;
+}
+.menu{
+  width: 120px;
+  height: 70px;
+  background-color: aquamarine;
+}
+
+ .top{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 #section{
