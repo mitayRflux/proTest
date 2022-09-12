@@ -7,6 +7,7 @@
 body{
   padding: 20px 0;
   background-color: #c0cad1;
+  
 }
 #contaner{
   width: 90%;
@@ -15,6 +16,7 @@ body{
   flex-direction: column;
   justify-content: space-around;
   box-shadow: 0 0 10px #AAB3BA;
+  overflow: hidden;
 }
 
 #header{
@@ -116,7 +118,8 @@ a:hover{
 
 #section{
   width: 100%;
-  padding: 15px 5px;
+  padding: 10px 0px;
+  overflow: hidden;
 }
 
 .item{
@@ -124,19 +127,35 @@ a:hover{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  
 }
 .item:first-child{
   flex-direction: row-reverse;
+  margin-bottom: 10px;
 }
 .item:last-child{
   flex-direction: row-reverse;
+  margin-top: 10px;
 }
 
 .img{
-  width:850px;
-  height: 550px;
   box-shadow:0 0 15px #5153556c;
+  border-right: 4px solid #0e060fbb;
+  border-bottom:3px solid #0e060fbb;
+  box-shadow:0 0 7px black;
 }
+
+.item:first-child img{
+  border-left: 4px solid #0e060fbb;
+  border-bottom:3px solid #0e060fbb;
+  box-shadow:0 0 7px black;
+}
+.item:last-child img{
+  border-left: 4px solid #0e060fbb;
+  border-bottom:3px solid #0e060fbb;
+  box-shadow:0 0 7px black;
+}
+
 .prob{
   width: 30%;
   padding: 45px 25px;
