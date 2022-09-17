@@ -10,9 +10,9 @@ body{
 #contaner{
   width: 95vw;
   height: 100vh;
+  overflow: hidden;
   margin: 0 auto;
   padding: 5px 0;
- overflow: hidden;
  display: flex;
  flex-direction: column;
 }
@@ -70,10 +70,90 @@ body{
   color: rgb(231, 240, 231);
   text-shadow:0 0 10px rgb(26, 25, 25); 
 }
+
 #section{
+ position: relative;
   width: 100vw;
-  border: 2px solid rgb(197, 74, 74);
+  height:100vh;
 }
+.sitebar {
+  height: 100vh;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.sitebar > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.sitebar h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: -30px;
+}
+
+.main-menu {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.main-menu > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+}
+
+button:hover {
+  color: #222;
+}
+
+button:focus {
+  outline: none;
+}
+
+#section .control button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 100;
+}
+
+#section .control.down-btn {
+  transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#section .control.up-btn {
+  transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 
 #footer{
   width: 100vw;
