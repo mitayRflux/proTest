@@ -10,9 +10,8 @@ body{
 #contaner{
   width: 95vw;
   height: 100vh;
-  overflow: hidden;
   margin: 0 auto;
-  padding: 5px 0;
+  overflow: hidden;
  display: flex;
  flex-direction: column;
 }
@@ -20,6 +19,7 @@ body{
 #header{
   width: 100vw;
   display: flex;
+  margin-top: 5px;
   flex-direction: column; 
   background-image: url('https://images.unsplash.com/photo-1641337221253-fdc7237f6b61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDc3fEJuLURqcmNCcndvfHxlbnwwfHx8fA%3D%3D&w=1000&q=80');
   background-size: cover;
@@ -52,7 +52,7 @@ body{
   justify-content: space-around;
 }
 .anons p{
-  margin-top: 200px;
+  margin-top: 185px;
   text-transform: uppercase;
   font-style: italic;
   text-shadow:0 0 10px rgb(26, 25, 25);
@@ -72,87 +72,36 @@ body{
 }
 
 #section{
- position: relative;
   width: 100vw;
   height:100vh;
 }
-.sitebar {
+.sidebar {
+  width:100%;
   height: 100vh;
-  width: 35%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: transform 0.5s ease-in-out;
-}
-
-.sitebar > div {
-  height: 100%;
-  width: 100%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
+  justify-content: baseline;
 }
 
-.sitebar h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-  margin-top: -30px;
-}
-
-.main-menu {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 35%;
-  width: 65%;
-  transition: transform 0.5s ease-in-out;
-}
-
-.main-menu > div {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 100%;
+.slider{
   width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
-button {
-  background-color: #fff;
-  border: none;
-  color: #aaa;
-  cursor: pointer;
-  font-size: 16px;
-  padding: 15px;
+.text{
+  width:30%;
+  height:100vh;
+  text-align: center;
+  padding:235px 55px;
+  text-shadow: 0 0 10px #fff;
+}
+.img{
+  width:70%;
+  height:100vh;
 }
 
-button:hover {
-  color: #222;
-}
-
-button:focus {
-  outline: none;
-}
-
-#section .control button {
-  position: absolute;
-  left: 35%;
-  top: 50%;
-  z-index: 100;
-}
-
-#section .control.down-btn {
-  transform: translateX(-100%);
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-#section .control.up-btn {
-  transform: translateY(-100%);
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
 
 
 #footer{
