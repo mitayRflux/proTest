@@ -6,4 +6,47 @@
 
 body{
   background-color: #3a393938;
+  color: #fff;
+  font-family: 'Khula', sans-serif;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  color: rgb(31, 28, 28);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #06343691;
+}
+
+.start {
+  font-size: 1.5rem;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transition: margin 0.5s ease-out;
+  background: linear-gradient(90deg, #213526 0%, #7c831e 100%);
+}
+.screen.up{
+  margin-top: -100vh;
+}
+.wrapp{
+  width: 100vw;
+  height: 100vh;
+  padding:150px 85px;
+  display: flex;
+  flex-direction: row;
+}
+#duble{
+  width: 100vw;
+  height: 100vh;
 }
