@@ -9,13 +9,15 @@ body{
   color: #fff;
   font-family: 'Khula', sans-serif;
   height: 100vh;
+  overflow: hidden;
   margin: 0;
   text-align: center;
 }
 
 a {
-  color: rgb(31, 28, 28);
+  color: rgb(206, 190, 190);
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 a:hover {
@@ -38,6 +40,34 @@ a:hover {
 }
 .screen.up{
   margin-top: -100vh;
+}
+#header{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url('https://images.unsplash.com/photo-1641337221253-fdc7237f6b61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDc3fEJuLURqcmNCcndvfHxlbnwwfHx8fA%3D%3D&w=1000&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alt{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.logo{
+  width: 100px;
+  height: 100px;
+  margin-right: 180px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #747875,#b4d7bd,#a78752);
+}
+.text{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .wrapp{
   width: 100vw;
