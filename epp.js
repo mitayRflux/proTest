@@ -6,7 +6,7 @@ const enter = document.querySelector('#entr');
 const finish = document.querySelector('#tab');
 const screens = document.querySelectorAll('.screen');
 
-console.log(finish);
+//console.log(finish);
 
 start.addEventListener('click',(event)=>{
   event.preventDefault();

@@ -28,6 +28,13 @@ a:hover {
   font-size: 1.5rem;
 }
 
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-color:#fff ;
+  opacity: 0.6;
+}
+
 .screen {
   display: flex;
   flex-direction: column;
